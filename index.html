@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlappyPepe 🐸</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pepemani Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>FlappyPepe 🐸</h1>
-        <canvas id="gameCanvas" width="400" height="600"></canvas>
-        <div class="score-board">
-            <p>Очки: <span id="score">0</span></p>
-            <p id="gameOver" class="hidden">ГРА ЗАКІНЧЕНА! Натисніть SPACE для перезагрузки</p>
-        </div>
-    </div>
-    <script src="game.js"></script>
+    <header>
+        <h1>Pepemani Game</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Main Menu</h2>
+            <button id="startGame">Start Game</button>
+            <button id="toggleSound">Toggle Sound</button>
+        </section>
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <div id="scores">
+                <!-- Scores will be dynamically populated -->
+            </div>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
