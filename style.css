@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #70c5ce;
+}
+
+canvas {
+  background-color: #ffffff;
+  border: 2px solid #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.scoreboard {
+  font-size: 24px;
+  color: #000;
+  position: absolute;
+  top: 10px;
+}
+
+.game-over {
+  font-size: 48px;
+  color: #ff0000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
